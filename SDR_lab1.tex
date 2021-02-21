@@ -140,7 +140,7 @@
 %
 \begin{figure}[H]
   	 \centering
-  		\includegraphics[trim={0cm 5cm 0cm 5cm},clip, angle=0, width=0.99\linewidth ]{pictures/lab1.pdf}
+  		\includegraphics[trim={0cm 4.5cm 0cm 4.5cm},clip, angle=0, width=0.99\linewidth ]{pictures/lab1.pdf}
   		\caption{Izveidotā \textit{Simulink} blokshēma}\label{fig:blokshama}
 \end{figure}
 %
@@ -163,13 +163,13 @@
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.99\linewidth ]{pictures/gain1.png}
-		\caption{Skaļuma regilēšana \textit{FM Baseband}.}\label{fig:volume1}
+		\caption{Skaļuma regulēšana \textit{FM Baseband}.}\label{fig:volume1}
 	\end{subfigure}
 	\label{fig:pilseta_modulacija}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.99\linewidth ]{pictures/gain2.png}
-		\caption{Skaļuma regilēšana \textit{FM Broadcast}.}\label{fig:volume2}
+		\caption{Skaļuma regulēšana \textit{FM Broadcast}.}\label{fig:volume2}
 	\end{subfigure}
 	\caption{\textit{Slider} bloku iestatījumi}
 	\label{fig:sliders}
@@ -180,20 +180,19 @@
 \begin{figure}[H]
   	 \centering
   		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.5\linewidth ]{pictures/spectrum_analyzer.png}
-  		\caption{Spektra analizatora ekrānšāviņš}\label{fig:spectrum_analyzer}
+  		\caption{Spektra analizatora ekrān-šāviņš}\label{fig:spectrum_analyzer}
 \end{figure}
 %
 \section{Secinājumi}
 %
-Šeit ir secinājumi
+Laboratorijas darba izstrādes laikā tika izveidots \textit{Simulink} modelis, kas spēj uztvert FM radiostacijas izmantojot \textit{ADALM-PLUTO} SDR. Pēc sākotnējo problēmu atrisināšanas ar \textit{ADALM-PLUTO} savienojamība ar \textit{Matlab} izdevās iegūt audio atskaņošanu (ar USB3 portu nedarbojās, vai darbojās ļoti nestabili, tiklīdz pārslēdzu uz USB2 portu ar modeļa darbību vairs problēmu nebija). Atšķirība no laboratorijas darba apraksta, ērtākai centrālās frekvences regulēšanai, izveidoju  to izmantojot bloku \textit{Gain slider}, kura ieejā tiek padota konstante $10^{6}$. Regulēšana ir ērtāka jo tā notiek ar soli $0.2MHz$ un ir daudz vieglāk noskaņot modeli uz zināmu radiostaciju frekvenci.\par 
+Moduļi \textit{Gain Slider} tiek izmantoti, lai kontrolētu skaņas skaļumu un ar to palīdzību ir iespējams salīdzināt moduļu \textit{FM Demodulator Baseband} un \textit{FM Broadcast Demodulator Baseband}. Salīdzinot audio kvalitāti skaņa izmantojot \textit{FM Broadcast Demodulator Baseband} moduli ir jūtami kvalitatīvāka.\par 
 %
 \section{Laboratorijas darba \textit{GitHub} krātuve}
 %
-\begin{left}
 \href{https://github.com/Clockfix/SDR\_lab1}
-	{\qrcode[height=1in]{https://github.com/Clockfix/SDR\_lab1}} \ \ \ \ 
+	{\qrcode[height=1in]{https://github.com/Clockfix/SDR\_lab1}} \ \ \ 
 \href{https://github.com/Clockfix/SDR\_lab1}
 	{https://github.com/Clockfix/SDR\_lab1}
-\end{left}
 %
 \end{document}

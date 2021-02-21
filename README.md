@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/clockfix/SDR_lab1?style=plastic) 
+![GitHub license](https://img.shields.io/github/license/clockfix/SDR_lab1?style=plastic) 
 ![GitHub last commit](https://img.shields.io/github/last-commit/clockfix/SDR_lab1?style=plastic)
 ![GitHub language count](https://img.shields.io/github/languages/count/clockfix/SDR_lab1?style=plastic)
 ![GitHub top language](https://img.shields.io/github/languages/top/clockfix/SDR_lab1?style=plastic)
