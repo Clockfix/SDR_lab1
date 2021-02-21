@@ -74,6 +74,12 @@
 \renewcommand{\cftsubsubsecaftersnum}{.}
 %------------------------------------------------
 
+%%%%%%%%%%%%%
+% QR kodam
+\usepackage{qrcode}
+\usepackage{hyperref}
+%%%%%%%%%%%
+
 % Atkāpe pirmajai rindkopai
 \usepackage{indentfirst}
 
@@ -132,21 +138,62 @@
 %
 \section{Izveidotā blokshēma}
 %
-%
-% 
-% \begin{figure}[H]
-%  	 \centering
-%  		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.8\linewidth ]{html/lab4_01.png}
-%  		\caption{E plaknes vērsuma diagramma}\label{fig:E}
-% \end{figure}
+\begin{figure}[H]
+  	 \centering
+  		\includegraphics[trim={0cm 5cm 0cm 5cm},clip, angle=0, width=0.99\linewidth ]{pictures/lab1.pdf}
+  		\caption{Izveidotā \textit{Simulink} blokshēma}\label{fig:blokshama}
+\end{figure}
 %
 \section{Bloku parametri}
 %
+\begin{figure}[H]
+  	 \centering
+  		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.5\linewidth ]{pictures/adalm-pluto.png}
+  		\caption{\textit{ADALM-PLUTO} bloka parametri}\label{fig:pluto}
+\end{figure}
+%
+%
+	\begin{figure}[H] % Use the t option for the alignment of the subfigures:
+	\centering
+		\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.99\linewidth ]{pictures/fmslider.png}
+		\caption{Centrālās frekvences iestatīšana}\label{fig:cf}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.99\linewidth ]{pictures/gain1.png}
+		\caption{Skaļuma regilēšana \textit{FM Baseband}.}\label{fig:volume1}
+	\end{subfigure}
+	\label{fig:pilseta_modulacija}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.99\linewidth ]{pictures/gain2.png}
+		\caption{Skaļuma regilēšana \textit{FM Broadcast}.}\label{fig:volume2}
+	\end{subfigure}
+	\caption{\textit{Slider} bloku iestatījumi}
+	\label{fig:sliders}
+\end{figure} 
+	 % 	
 \section{Novērotās oscilogrammas un spektri}
-% 
+%
+\begin{figure}[H]
+  	 \centering
+  		\includegraphics[trim={0cm 0cm 0cm 0cm},clip, angle=0, width=0.5\linewidth ]{pictures/spectrum_analyzer.png}
+  		\caption{Spektra analizatora ekrānšāviņš}\label{fig:spectrum_analyzer}
+\end{figure}
+%
 \section{Secinājumi}
 %
 Šeit ir secinājumi
 %
+\section{Laboratorijas darba \textit{GitHub} krātuve}
+%
+\begin{left}
+\href{https://github.com/Clockfix/SDR\_lab1}
+	{\qrcode[height=1in]{https://github.com/Clockfix/SDR\_lab1}} \ \ \ \ 
+\href{https://github.com/Clockfix/SDR\_lab1}
+	{https://github.com/Clockfix/SDR\_lab1}
+\end{left}
 %
 \end{document}
